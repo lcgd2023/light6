@@ -1,0 +1,22 @@
+{
+  "name": "light6-chat",
+  "version": "1.0.0",
+  "description": "A WeChat-like web chat application",
+  "scripts": {
+    "dev:worker": "wrangler dev",
+    "deploy:worker": "wrangler deploy",
+    "build": "npm run build:css",
+    "build:css": "postcss src/frontend/css/style.css -o dist/css/style.css",
+    "dev": "npm run build:css -- --watch"
+  },
+  "dependencies": {
+    "hono": "^3.0.0",
+    "@hono/node-server": "^1.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^10.0.0",
+    "autoprefixer": "^10.4.0"
+  }
+} 
