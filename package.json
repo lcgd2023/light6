@@ -6,7 +6,7 @@
     "dev:worker": "wrangler dev",
     "deploy:worker": "wrangler deploy",
     "build": "npm run build:css",
-    "build:css": "mkdir -p dist/css && postcss src/frontend/css/style.css -o dist/css/style.css",
+    "build:css": "mkdir -p dist/css && postcss ./src/frontend/css/style.css -o dist/css/style.css",
     "dev": "npm run build:css -- --watch"
   },
   "dependencies": {
