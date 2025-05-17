@@ -10,13 +10,15 @@
     "dev": "npm run build:css -- --watch"
   },
   "dependencies": {
-    "hono": "^3.0.0",
-    "@hono/node-server": "^1.0.0"
+    "@hono/node-server": "^1.0.0",
+    "bcryptjs": "^3.0.2",
+    "hono": "^4.0.0"
   },
   "devDependencies": {
-    "wrangler": "^3.0.0",
+    "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
     "postcss-cli": "^10.0.0",
-    "autoprefixer": "^10.4.0"
-  }
-} 
+    "wrangler": "^4.15.2"
+  },
+  "type": "module"
+}
